@@ -1,0 +1,61 @@
+<div
+  class="profile-container card mb-5"
+  style="position: relative"
+  id="presentation"
+>
+  <!-- Banner -->
+  <div class="cover rounded-top" style="position: relative">
+    <img [src]="profileData.url_cover" />
+    <button *ngIf="userLogged()" class="btn img-edit position-absolute top-0 end-0 m-2">
+      <i class="fa fa-pen"></i>
+    </button>
+  </div>
+
+  <div
+    class="d-flex align-items-center position-relative"
+    style="height: 160px"
+  >
+    <div style="position: absolute; left: 1rem; bottom: 0.5rem">
+      <div style="position: relative">
+        <img
+          [src]="profileData.url_foto"
+          alt="Avatar"
+          class="rounded-circle border border-3"
+          style="width: 170px; height: 170px; background-color: white"
+        />
+        <button *ngIf="userLogged()"
+          class="btn img-edit position-absolute top-50 start-50 translate-middle"
+        >
+          <i class="fa fa-pen"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="profile position-absolute m-2" style="left: 12rem">
+      <h2 class="name">{{ profileData.nombre }} {{ profileData.apellido }}</h2>
+      <p class="title">{{ profileData.titulo }}</p>
+    </div>
+
+    <div class="ms-auto p-5 contact">
+      <p class="location mb-0">
+        {{ ubicationData.localidad }}, {{ ubicationData.provincia }}
+      </p>
+      <p class="phone mb-0">
+        <b>{{ profileData.telefono }}</b>
+      </p>
+      <p class="mail">{{ profileData.email }}</p>
+      <div>
+        <i class="fa-brands fa-linkedin fa-xl me-1" (click)="goToSpecificUrl(profileData.links[2].link)"></i>
+        <i class="fa-brands fa-instagram-square fa-xl me-1" (click)="goToSpecificUrl(profileData.links[1].link)"></i>
+        <i class="fa-brands fa-facebook-square fa-xl me-1" (click)="goToSpecificUrl(profileData.links[0].link)"></i>
+        <i class="fa-brands fa-github-square fa-xl me-1" (click)="goToSpecificUrl(profileData.links[3].link)"></i>
+      </div>
+    </div>
+
+    <button button *ngIf="userLogged()"
+      class="btn position-absolute top-100 start-50 translate-middle border border-dark"
+    >
+      <i class="fa fa-pen fa-sm"></i>
+    </button>
+  </div>
+</div>

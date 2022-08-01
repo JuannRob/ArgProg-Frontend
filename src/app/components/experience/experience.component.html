@@ -1,0 +1,19 @@
+<section class="experience mb-5 position-relative">
+    <h2 class="section-title text-uppercase pb-3 mb-3">Experiencia</h2>
+    <button *ngIf="userLogged()" class="btn position-absolute top-0 end-0 m-1">
+      <i class="fa fa-pen fa-sm"></i>
+    </button>
+    <div class="content">
+      <div class="item" *ngFor="let exp of expData" attr.id="{{exp.id}}">
+        <h3 class="title">
+          {{exp.empresa}} -
+          <span class="place">{{exp.puesto}} </span
+          ><span class="year">({{exp.fecha_inicio}}  -  {{exp.fecha_fin == null ? 'Presente' : exp.fecha_fin}})</span>
+        </h3>
+        <p>
+          {{exp.descripcion}}
+        </p>
+      </div>
+      <!--//item-->
+    </div>
+  </section>

@@ -1,0 +1,25 @@
+* {box-sizing:border-box}
+
+.skillsContainer {
+  width: 100%;
+  background-color: #ddd;
+}
+
+p{
+    margin: 0;
+}
+
+.Básico,
+.Intermedio,
+.Avanzado,
+.Experto {
+  text-align: right;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: white;
+}
+
+.Básico {width: 25%; background-color: #f44336;} /* Green */
+.Intermedio {width: 50%; background-color: #2196F3;} /* Blue */
+.Avanzado {width: 75%; background-color: #808080;} /* Blue */
+.Experto {width: 100%; background-color: #04AA6D;} /* Red */

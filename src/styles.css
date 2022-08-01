@@ -1,1 +1,194 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Lato', arial, sans-serif;
+    color: #434343;
+    background: #e8f1f7;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #778492;
+}
+
+
+.curriculum-body {
+    background-color: #fff;
+    max-width: 1000px;
+}
+
+.profile .name {
+    color: #49515a;
+}
+
+.card-header {
+    background-color: #fff;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.navbar,
+.curriculum-body {
+
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.cover {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.cover>img {
+    width: 100%;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    position: relative;
+    color: #434E5E;
+}
+
+.section-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background: #8d9aad;
+}
+
+.img-edit {
+    z-index: 1;
+    cursor: pointer;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.img-edit:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.838);
+}
+
+.btn:hover,
+.btn:not(:hover) {
+    border: none
+}
+
+.experience .item {
+    margin-bottom: 30px;
+}
+
+.experience .item .title {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.experience .item .title .place {
+    color: grey;
+    font-weight: normal;
+}
+
+.experience .item .title .place a {
+    color: grey;
+}
+
+.experience .item .title .place a:hover {
+    color: #323232;
+}
+
+.experience .item .title .year {
+    color: #b0b7bf;
+    font-weight: normal;
+}
+
+.education .item {
+    margin-bottom: 30px;
+}
+
+.education .item:last-child {
+    margin-bottom: 0;
+}
+
+.education .item .title {
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.education .item .institution {
+    font-family: "Lato", arial, sans-serif;
+    font-size: 15px;
+    color: #999;
+    font-weight: 600;
+}
+
+.education .item .institution .year {
+    color: #b0b7bf;
+    font-weight: 500;
+}
+
+.education .item .link {
+    font-family: "Lato", arial, sans-serif;
+    font-size: 15px;
+    color: #999;
+    font-weight: 600;
+}
+
+.box-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    position: relative;
+    color: #434E5E;
+}
+
+.profile-container,
+.languages,
+.extras,
+.projects {
+    border: 1px solid #8d9aad;
+}
+
+.languages .level {
+    color: rgb(131, 131, 131);
+    font-weight: normal;
+}
+
+.projects .item {
+    margin-bottom: 30px;
+}
+
+.projects .item:last-child {
+    margin-bottom: 0;
+}
+
+.projects .item .title {
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.projects .item .institution {
+    font-family: "Lato", arial, sans-serif;
+    font-size: 15px;
+    color: #999;
+    font-weight: 600;
+}
+
+.projects .item .institution .year {
+    color: #b0b7bf;
+    font-weight: 500;
+}

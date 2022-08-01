@@ -1,0 +1,27 @@
+<nav class="navbar sticky-top" style="background-color: white">
+  <div class="container-fluid">
+    <a class="navbar-brand" style="font-weight: 800" [routerLink]="['']">
+      <img
+        src="/assets/logo/arg-programa.png"
+        alt=""
+        width="90"
+        height="31.2"
+        class="d-inline-block align-text-top"
+      />
+      #YoProgramo
+    </a>
+    <button
+      *ngIf="!userLogged(); else usrLogged"
+      class="btn btn-outline-dark"
+      type="submit"
+      [routerLink]="[currentPath === '/user' ? '/login' : '']"
+    >
+      {{ currentPath === "/user" ? "Ingresar" : "Volver " }}
+    </button>
+    <ng-template #usrLogged
+      ><button class="btn btn-outline-dark" type="submit" (click)="onClick()">
+        Salir
+      </button></ng-template
+    >
+  </div>
+</nav>
