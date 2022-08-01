@@ -1,0 +1,12 @@
+<div class="card languages position-relative m-3 mb-5">
+    <div class="card-header box-title">Idiomas</div>
+    <button *ngIf="userLogged()" class="btn position-absolute top-0 end-0 m-1">
+      <i class="fa fa-pen fa-sm"></i>
+    </button>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let lang of langData" attr.id="{{lang.id}}">
+        {{lang.idioma.idioma}} <br />
+        <span class="level">{{lang.nivel.titulo}}</span>
+      </li>
+    </ul>
+  </div>

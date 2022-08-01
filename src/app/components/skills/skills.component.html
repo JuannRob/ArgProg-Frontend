@@ -1,0 +1,14 @@
+<div class="card projects mb-5 position-relative">
+  <div class="card-header box-title">Competencias</div>
+  <button *ngIf="userLogged()" class="btn position-absolute top-0 end-0 m-1">
+    <i class="fa fa-pen fa-sm"></i>
+  </button>
+  <div class="card-body">
+    <div *ngFor="let skill of skillData">
+    <p>{{skill.nombre}}</p>
+    <div class="skillsContainer mb-3">
+      <div [ngClass]="skill.nivel.titulo">{{skill.nivel.titulo}}
+      </div>
+    </div>
+  </div>
+</div>

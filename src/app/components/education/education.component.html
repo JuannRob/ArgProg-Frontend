@@ -1,0 +1,15 @@
+<section class="education mb-5 position-relative">
+    <h2 class="section-title text-uppercase pb-3 mb-3">Formación</h2>
+    <button *ngIf="userLogged()" class="btn position-absolute top-0 end-0 m-1">
+      <i class="fa fa-pen fa-sm"></i>
+    </button>
+    <div class="content">
+      <div class="item" *ngFor="let education of educationData" attr.id="{{education.id}}">
+        <h3 class="title">{{education.institucion}}</h3>
+        <h4 class="institution">
+          {{education.titulo}}
+          <span class="year">({{education.fecha_inicio}}  -  {{education.fecha_fin == null ? 'En Curso' : education.fecha_fin}})</span>
+        </h4>
+      </div>
+    </div>
+  </section>

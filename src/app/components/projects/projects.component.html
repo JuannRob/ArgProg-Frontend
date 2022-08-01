@@ -1,0 +1,18 @@
+<section class="education mb-5 position-relative">
+  <h2 class="section-title text-uppercase pb-3 mb-3">Proyectos</h2>
+  <button *ngIf="userLogged()" class="btn position-absolute top-0 end-0 m-1">
+    <i class="fa fa-pen fa-sm"></i>
+  </button>
+  <div class="content">
+    <div class="item" *ngFor="let project of projectData" attr.id="{{project.id}}">
+      <h3 class="title">{{project.nombre}}</h3>
+      <a [href]="project.link" class="link" target="_blank">
+        {{project.link}}
+      </a >
+      - <span class="year">({{project.fecha}})</span>
+      <p>
+        {{project.descripcion}}
+      </p>
+    </div>
+  </div>
+  </section>
