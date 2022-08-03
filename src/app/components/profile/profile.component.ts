@@ -20,6 +20,8 @@ export class ProfileComponent implements OnInit {
       this.profileData=data;
     })
 
+    console.log('datos:', this.profileData);
+
     this.userData.getUserUbication().subscribe(data => {
       this.ubicationData=data;
     })
