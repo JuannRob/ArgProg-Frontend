@@ -3,11 +3,11 @@
   <button *ngIf="userLogged()" class="btn position-absolute top-0 end-0 m-1">
     <i class="fa fa-pen fa-sm"></i>
   </button>
-  <div class="skills-body card-body">
+  <div class="skills-container card-body">
     <div *ngFor="let skill of skillData">
     <p>{{skill.nombre}}</p>
-    <div class="skills-container mb-3">
-      <div [ngClass]="skill.nivel.titulo">{{skill.nivel.titulo}}
+    <div class="skill-box-container mb-3">
+      <div [ngClass]="skill.nivel.titulo" class="p-1">{{skill.nivel.titulo}}
       </div>
     </div>
   </div>
